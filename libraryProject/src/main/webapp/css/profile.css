@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.profile-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.profile-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-item span {
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.button, .delete-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.button {
+    background-color: #3498db;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.delete-button.disabled {
+    background-color: #ccc;
+    cursor: default;
+}
+
+.delete-button.disabled:hover {
+    background-color: #ccc;
+}
